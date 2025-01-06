@@ -1,0 +1,354 @@
+/* styles.css */
+:root {
+    --lgrey: #ede7e3;
+    --dgrey: rgb(53, 47, 55);
+    --white: #ffffff;
+  }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px 10%;
+    background-color: var(--dgrey);
+}
+
+header .logo img{
+    width: 100%;
+    height: 70px;
+}
+
+header nav a {
+    margin: 0 10px;
+    padding: 10px 20px;
+    min-width: 150px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--lgrey);
+}
+
+header nav a:hover{
+    background-color:var(--lgrey);
+    color: var(--dgrey);
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap-reverse;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 70px 10svi 200px 10svi;
+    background-color: var(--lgrey);
+}
+
+.intro h1 {
+    font-size: 36px;
+    margin: 0px 0;
+    color: var(--dgrey);
+    letter-spacing: 1px;
+}
+
+.intro #see-projects{
+    all: unset;
+    width: 50%;
+    align-content: center;
+    background-color: var(--dgrey);
+    color: var(--lgrey);
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.intro #see-projects:hover{
+    background-color: var(--lgrey);
+    color: var(--dgrey); 
+    border: solid 1px var(--dgrey);
+}
+
+.intro p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: var(--dgrey);
+    margin-bottom: 30px;
+}
+
+.intro .about{
+    width: 50%;
+    padding: 1% 0;
+}
+
+.intro img{
+    width: 90%;
+    height: auto;
+    padding: 0;
+    box-shadow: 10px 10px 1px var(--dgrey); 
+}
+
+.intro img:hover{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    box-shadow: 15px 15px 1px var(--dgrey); 
+    transition: all ease-in-out 0.2s;
+    margin-left: 0;
+}
+
+.skills{
+    background-color: var(--dgrey);
+    height: 100vh;
+    padding: 10px 10%;
+    text-align: center;
+}
+
+.skills h2 {
+    color: var(--lgrey);
+    font-size: 28px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.skills .service {
+    display: inline-block;
+    width: 23%;
+    margin: 20px 1.5%;
+    vertical-align: top;
+    text-align: left;
+    padding: 0;
+}
+
+.skills .service img {
+    width: 85%;
+    border-radius: 2px;
+}
+
+.skills .service img:hover {
+    width: 90%;
+    box-shadow: 0 4px 5px var(--lgrey);
+    transition: all ease-in-out 0.2s;
+    margin-bottom: -13px;
+    margin-left: 0;
+}
+
+.projects{
+    height: 100vh;
+    padding: 50px 10%;
+    text-align: center;
+    background-color: var(--lgrey);
+}
+
+.projects h2{
+    color: var(--dgrey);
+    font-size: 28px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.projects p{
+    color: var(--dgrey);
+    font-size: 18px;
+    margin: 30px;
+    letter-spacing: 1px;
+}
+
+.projects .post {
+    display: inline-block;
+    width: 30%;
+    margin: 20px 1.5%;
+    vertical-align: top;
+    align-content: center;
+    color: var(--dgrey);
+}
+
+.projects .post img {
+    width: 85%;
+    border-radius: 2px;
+    margin: 30px;
+}
+
+.projects .post img:hover {
+    width: 100%;
+    box-shadow: 0 5px 10px var(--dgrey);
+    transition: all ease-in-out 0.2s;
+    margin-left: 0;
+}
+
+.button{
+    all:unset;
+    width: 50%;
+    align-content: center;
+    background-color: var(--dgrey);
+    color: var(--lgrey);
+    border: none;
+    margin: 20px;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: var(--lgrey);
+    color: var(--dgrey); 
+    border: solid 1px var(--dgrey);
+}
+
+footer {
+    background-color: var(--dgrey);
+    color: var(--lgrey);;
+    text-align: center;
+    padding: 20px;
+}
+footer a {
+    color: var(--lgrey);;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a img{
+    width: 30px;
+    color: var(--lgrey);
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+/* Contact page, form */
+
+.contact-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--lgrey);
+}
+
+form{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    color: var(--dgrey);
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: var(--lgrey);
+    padding: 30px;
+    margin: 0;
+}
+
+form h1{
+    color: var(--dgrey);
+    padding: 10px;
+    margin: 0 0 20px 0;
+}
+
+form input{
+    border: none;
+    border-bottom: solid var(--dgrey) 1px;
+    background-color: var(--lgrey);
+    color: var(--dgrey);
+    font-size: 18px;
+    width: 90%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+input::placeholder{
+    color: var(--dgrey);
+}
+
+form textarea{
+    align-items: center;
+    font-family: Arial, sans-serif;
+    border: none;
+    color: var(--dgrey);
+    border-bottom: solid var(--dgrey) 1px;
+    background-color: var(--lgrey);
+    font-size: 18px;
+    width: 90%;
+    resize: none;
+    height: 30px;
+    margin: 10px 0;
+    padding: 10px 0 0 2px;
+}
+
+textarea::placeholder{
+    color: var(--dgrey);
+}
+
+input[type="submit"]{
+    all:unset;
+    width: 81%;
+    align-content: center;
+    background-color: var(--dgrey);
+    text-align: center;
+    color: var(--lgrey);
+    border: none;
+    margin: 20px;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: var(--lgrey);
+    border: solid 1px var(--dgrey);
+    color: var(--dgrey);
+}
+
+#mycontacts{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    color: var(--lgrey);
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: var(--dgrey);
+    padding: 10px;
+    margin: 0;
+}
+
+#mycontacts h1{
+    margin: 30px 0 50px 0;
+    align-self:center;
+}
+
+#mycontacts p{
+    margin: 10px;
+    padding: 0;
+    letter-spacing: 2px;
+    align-self:center;
+}
+
+hr{
+    width: 80%;
+    margin-top: 40px;
+}
+
+#mycontacts h2{
+    align-self:center;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+#media-icons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.smedia{
+    width: 50px;
+    height: auto;
+}
