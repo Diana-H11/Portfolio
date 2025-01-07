@@ -8,6 +8,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    min-width: 300px;
 }
 header {
     display: flex;
@@ -40,6 +41,8 @@ header nav a:hover{
 }
 
 .intro {
+    height: 60vh;
+    min-height: fit-content;
     display: flex;
     flex-direction: row;
     flex-wrap:wrap-reverse;
@@ -104,7 +107,8 @@ header nav a:hover{
 
 .skills{
     background-color: var(--dgrey);
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     padding: 10px 10%;
     text-align: center;
 }
@@ -112,16 +116,15 @@ header nav a:hover{
 .skills h2 {
     color: var(--lgrey);
     font-size: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     letter-spacing: 1px;
 }
 
 .skills .service {
     display: inline-block;
+    min-width: 250px;
     width: 23%;
-    margin: 20px 1.5%;
-    vertical-align: top;
-    text-align: left;
+    margin: 30px 1.5%;
     padding: 0;
 }
 
@@ -139,7 +142,8 @@ header nav a:hover{
 }
 
 .projects{
-    height: 100vh;
+    height: max-content;
+    min-height: 70vh;
     padding: 50px 10%;
     text-align: center;
     background-color: var(--lgrey);
@@ -161,6 +165,7 @@ header nav a:hover{
 
 .projects .post {
     display: inline-block;
+    min-width: 250px;
     width: 30%;
     margin: 20px 1.5%;
     vertical-align: top;
@@ -299,6 +304,7 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover{
+    margin: 19px;
     background-color: var(--lgrey);
     border: solid 1px var(--dgrey);
     color: var(--dgrey);
@@ -348,7 +354,35 @@ hr{
     gap: 30px;
 }
 
-.smedia{
+.smedia {
     width: 50px;
     height: auto;
+}
+
+@media (max-width: 1000px) {
+    
+header nav{
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    
+}    
+header nav a {
+    margin: 0px 0px;
+    padding: 5px;
+
+}
+    
+.intro img{
+    width: 70%;
+}
+
+.intro .about{
+    width: 90%;
+    padding: 1% 0;
+}
+
+.projects .post img {
+    margin: 0 0 30px 0;
+}
 }
