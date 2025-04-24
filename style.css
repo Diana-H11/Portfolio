@@ -1,0 +1,610 @@
+/* styles.css */
+:root {
+    --lgrey: rgb(255, 255, 250);
+    --dgrey: rgb(40, 11, 55);
+    --dviolet: rgb(48, 40, 78);
+    --white: #ffffff;
+    --blue: rgb(220, 225, 245);
+  }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-width: 300px;
+}
+header {
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 15%;
+    background-color: var(--blue);
+}
+
+header a {
+    text-decoration: none;
+}
+
+header h2 {
+    all: unset;
+    color:  var(--dviolet);
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+header .logo img{
+    width: 100%;
+    height: 80px;
+}
+
+header nav a {
+    margin: 0 10px;
+    padding: 13px 25px;
+    min-width: 150px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 20px;
+    color:  rgb(48, 40, 78);
+    border-radius: 14px;
+}
+
+header nav a:hover{
+    background-color:  var(--blue);
+    color: var(--dviolet);
+    border-radius: 14px;
+    box-shadow:   inset 2px 2px 6px rgb(253, 252, 255),
+                  inset -2px -2px 6px rgb(142, 142, 173);
+    transition: 0.2s ease-in-out;
+}
+
+.intro {
+    height: 60vh;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap-reverse;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 70px 10svi 200px 10svi;
+    background-color: var(--lgrey);
+}
+
+.intro h1 {
+    font-size: 36px;
+    margin: 0px 0;
+    color: var(--dgrey);
+    letter-spacing: 1px;
+}
+
+.intro #see-projects{
+    all: unset;
+    width: 50%;
+    align-content: center;
+    background-color:  var(--blue);
+    color: var(--dviolet);
+    border-radius: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 15px 30px;
+    margin-top: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow:
+        0 12px 24px rgba(0, 0, 0, 0.2),
+        0 4px 6px rgba(0, 0, 0, 0.08);
+    transition: 0.2s ease-in-out;
+}
+
+.intro #see-projects:active{
+    background-color: var(--blue);
+    color: var(--dviolet); 
+    border: none;
+    border-radius: 14px;
+    scale: 1.05; /* Легке збільшення кнопки */
+    box-shadow:
+        0 16px 30px rgba(0, 0, 0, 0.25),
+        0 6px 8px rgba(0, 0, 0, 0.1),
+        0 0 15px rgba(100, 107, 237, 0.6); 
+    transition: 0.2s ease-in-out;
+}
+
+.shape-one {
+    position: absolute;
+    left: 180px;
+    top: 130px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #ffffff, rgb(255, 253, 224));
+    box-shadow:
+    inset -5px -5px 10px rgba(255, 255, 255, 0.6),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.1),
+    0 8px 15px rgba(0, 0, 0, 0.2);
+    z-index: 0;
+}
+
+.shape-two {
+    position: absolute;
+    left: 700px;
+    top: 500px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #ffffff, rgb(205, 199, 255));
+    box-shadow:
+    inset -5px -5px 10px rgba(255, 255, 255, 0.6),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.1),
+    0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.shape-tree {
+    position: absolute;
+    left: 1250px;
+    top: 300px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #ffffff, rgb(242, 199, 255));
+    box-shadow:
+    inset -5px -5px 10px rgba(255, 255, 255, 0.6),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.1),
+    0 8px 15px rgba(0, 0, 0, 0.2);
+    
+}
+
+.shape-four {
+    position: absolute;
+    left: 150px;
+    top: 500px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #ffffff, rgb(255, 199, 219));
+    box-shadow:
+    inset -5px -5px 10px rgba(255, 255, 255, 0.6),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.1),
+    0 8px 15px rgba(0, 0, 0, 0.2);
+}
+  
+.symbol {
+    position: absolute;
+    font-size: 56px;
+    font-weight: bold;
+    color: #a7abe58b; /* світло-бузковий */
+    background: radial-gradient(circle at 30% 30%, #ffffff, #bca7e599);
+    padding: 20px 25px;
+    border-radius: 16px;
+    box-shadow:
+      inset -4px -4px 8px rgba(255, 255, 255, 0.6),
+      inset 4px 4px 8px rgba(0, 0, 0, 0.15),
+      0 12px 25px rgba(138, 100, 200, 0.25);
+    user-select: none;
+  }
+
+  .symbol-1 {
+    padding-top: 15px;
+    top: 40%;
+    left: 3%;
+  }
+
+  .symbol-2 {
+    top: 15%;
+    left: 45%;
+    transform: rotate(-8deg);
+    background: radial-gradient(circle at 30% 30%, #ffffff, #cdd7f5);
+    box-shadow:
+      inset -4px -4px 8px rgba(255, 255, 255, 0.7),
+      inset 4px 4px 8px rgba(0, 0, 0, 0.15),
+      0 12px 25px rgba(120, 160, 255, 0.3);
+  }
+
+  .symbol-3 {
+    top: 75%;
+    left: 80%;
+    padding-top: 5px;
+    transform: rotate(12deg);
+    background: radial-gradient(circle at 30% 30%, #ffffff, #f8dbb4);
+    box-shadow:
+      inset -4px -4px 8px rgba(255, 255, 255, 0.6),
+      inset 4px 4px 8px rgba(0, 0, 0, 0.1),
+      0 12px 25px rgba(180, 120, 255, 0.25);
+}
+
+.intro p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: var(--dgrey);
+    margin-bottom: 30px;
+}
+
+.intro .about{
+    width: 50%;
+    padding: 1% 0;
+}
+
+.intro #image {
+    width: 30%;
+}
+
+.intro img{
+    width: 90%;
+    height: auto;
+    padding: 0;
+    border-radius: 18px;
+    background: var(--lgrey);
+    box-shadow:
+       -10px -10px 20px var(--blue),
+       10px 10px 20px var(--dviolet);
+}
+
+.skills{
+    /* background-color: rgb(48, 40, 78); */
+    background-color: rgb(150, 151, 196);
+    min-height: 100vh;
+    height: fit-content;
+    padding: 20px 10%;
+    text-align: center;
+}
+
+.skills h2 {
+    color: var(--lgrey);
+    font-size: 28px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.skills .service {
+    display: inline-block;
+    min-width: 100px;
+    width: 5%;
+    margin: 30px 2%;
+}
+
+.skills .service img {
+    width: 85%;
+    border-radius: 14px;
+    box-shadow:
+        inset 5px 5px 10px rgb(215, 226, 248),
+        inset -5px -5px 10px var(--dviolet);
+    padding: 20px;
+    user-select: none;
+    transition: transform 0.2s ease;
+}
+
+.skills .service img:hover {
+    box-shadow:   
+        inset -5px -5px 10px rgb(215, 226, 248),
+        inset 5px 5px 10px var(--dviolet);
+    transition: 0.2s ease-in-out;
+}
+
+.skills .service img:active {
+    transition: 0.2s ease-in-out;
+    box-shadow:   
+    inset -5px -5px 10px rgb(215, 226, 248),
+    inset 5px 5px 10px var(--dviolet);
+}
+
+.skills-text {
+    justify-self: center;
+    width: 70%;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-weight: 500;
+    text-align: justify;
+    color: var(--lgrey);
+}
+
+.projects{
+    height: max-content;
+    min-height: 70vh;
+    padding: 50px 10%;
+    text-align: center;
+    background-color: var(--lgrey);
+}
+
+.projects h2{
+    color: var(--dgrey);
+    font-size: 28px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.projects p{
+    color: var(--dgrey);
+    font-size: 18px;
+    margin: 30px;
+    letter-spacing: 1px;
+}
+
+.projects .post {
+    display: inline-block;
+    min-width: 250px;
+    width: 30%;
+    margin: 20px 1.5%;
+    vertical-align: top;
+    align-content: center;
+    color: var(--dgrey);
+}
+
+.projects .post img {
+    width: 85%;
+    border-radius: 18px;
+    margin: 30px;
+}
+
+.projects .post img:hover {
+    width: 100%;
+    box-shadow: 0 5px 10px var(--dgrey);
+    transition: all ease-in-out 0.4s;
+    margin-left: 0;
+}
+
+.button{
+    all: unset;
+    width: 50%;
+    align-content: center;
+    background-color:  var(--blue);
+    color: var(--dviolet);
+    border-radius: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 15px 30px;
+    margin-top: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow:
+        0 12px 24px rgba(0, 0, 0, 0.2),
+        0 4px 6px rgba(0, 0, 0, 0.08);
+    transition: 0.2s ease-in-out;
+}
+
+.button:active{
+    background-color: var(--blue);
+    color: var(--dviolet); 
+    border: none;
+    border-radius: 14px;
+    scale: 1.05; /* Легке збільшення кнопки */
+    box-shadow:
+        0 16px 30px rgba(0, 0, 0, 0.25),
+        0 6px 8px rgba(0, 0, 0, 0.1),
+        0 0 15px rgba(100, 107, 237, 0.6); 
+    transition: 0.2s ease-in-out;
+}
+
+footer {
+    background-color: var(--dviolet);
+    color: var(--lgrey);;
+    text-align: center;
+    padding: 20px;
+    
+}
+footer a {
+    color: var(--lgrey);;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a img{
+    width: 30px;
+    color: var(--lgrey);
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+/* Contact page, form */
+
+.contact-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 60px;
+    background-color: var(--lgrey);
+}
+
+form{
+    min-width: 250px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    color: var(--dgrey);
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: var(--lgrey);
+    padding: 30px 30px 0 30px;
+    margin: 0;
+}
+
+form h1{
+    color: var(--dgrey);
+    padding: 10px;
+    margin: 0 0 20px 0;
+}
+
+form input{
+    border: none;
+    border-bottom: solid var(--dgrey) 1px;
+    background-color: var(--lgrey);
+    color: var(--dgrey);
+    font-size: 18px;
+    width: 90%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+input::placeholder{
+    color: var(--dgrey);
+}
+
+form textarea{
+    align-items: center;
+    font-family: Arial, sans-serif;
+    border: none;
+    color: var(--dgrey);
+    border-bottom: solid var(--dgrey) 1px;
+    background-color: var(--lgrey);
+    font-size: 18px;
+    width: 90%;
+    resize: none;
+    height: 30px;
+    margin: 10px 0;
+    padding: 10px 0 0 2px;
+}
+
+textarea::placeholder{
+    color: var(--dgrey);
+}
+
+input[type="submit"]{
+    all: unset;
+    width: 80%;
+    text-align: center;
+    background-color:  var(--blue);
+    color: var(--dviolet);
+    border-radius: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 15px 30px;
+    /* margin-top: 150px; */
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow:
+        0 12px 24px rgba(0, 0, 0, 0.2),
+        0 4px 6px rgba(0, 0, 0, 0.08);
+    transition: 0.2s ease-in-out;
+    margin-top: 30px;
+}
+
+input[type="submit"]:active{
+    background-color: var(--blue);
+    color: var(--dviolet); 
+    border: none;
+    border-radius: 14px;
+    scale: 1.05; /* Легке збільшення кнопки */
+    box-shadow:
+        0 16px 30px rgba(0, 0, 0, 0.25),
+        0 6px 8px rgba(0, 0, 0, 0.1),
+        0 0 15px rgba(100, 107, 237, 0.6); 
+    transition: 0.2s ease-in-out;
+}
+
+#mycontacts{
+    min-width: 250px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    color: var(--lgrey);
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 14px;
+    background-color: var(--dviolet);
+    padding: 10px;
+    margin: 0;
+}
+
+#mycontacts h1{
+    margin: 30px 0 50px 0;
+    align-self:center;
+}
+
+#mycontacts p{
+    margin: 10px;
+    padding: 0;
+    letter-spacing: 2px;
+    align-self:center;
+}
+
+hr{
+    width: 80%;
+    margin-top: 40px;
+}
+
+#mycontacts h2{
+    align-self:center;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+#media-icons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.smedia {
+    width: 50px;
+    height: auto;
+}
+
+@media (max-width: 1000px) {
+    
+header nav{
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    
+}    
+header nav a {
+    margin: 0px 0px;
+    padding: 10px;
+
+}
+    
+.intro img{
+    width: 70%;
+}
+
+.intro .about{
+    width: 90%;
+    padding: 1% 0;
+}
+
+.shape-one {
+    z-index: -1;
+}
+
+.shape-two {
+    z-index: -1;
+}
+
+.shape-four {
+    z-index: -1;
+}
+
+.symbol-2 {
+    z-index: -1;
+}
+
+.symbol-3 {
+    top:45%;
+}
+
+.projects .post img {
+    margin: 0 0 30px 0;
+}
+
+form{
+    width: 100%;
+}
+
+#mycontacts{
+    width: 100%;
+}
+
+.smedia {
+    width: 20px;
+    height: auto;
+}
+
+}
