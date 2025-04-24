@@ -17,7 +17,7 @@ form.addEventListener("submit", function(event) {
     formData.append('message', message);
 
     // Використовуємо fetch для відправлення форми на сервер (FormSubmit)
-    fetch("https://formsubmit.co/2fda29d5e9cfee627f4d852d13964ca8", {
+    fetch("https://formsubmit.co/dianaprijmak81@gmail.com", {
         method: "POST",
         body: formData,
     })
